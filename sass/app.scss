@@ -7,7 +7,7 @@ $primary : #0b8457;
 //nav scss
 $nav-link-padding-x : 20px !important;
 //$nav-link-font-weight : bold;
-$nav-link-font-size : 12px;
+$nav-link-font-size : 16px;
 $nav-link-hover-color : $primary !important;
 //$navbar-light-active-color : $primary;
 
@@ -32,7 +32,11 @@ $btn-border-radius-sm : 8px;
 
 .navbar-brand-img{
   transition: 0.5s;
-  height: 25px;
+  height: 35px;
+}
+
+.nav-link{
+  border-radius: $btn-border-radius;
 }
 
 .nav-link.active{

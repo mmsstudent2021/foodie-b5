@@ -22,27 +22,31 @@ function removeAllNavLinkActive(){
     navLinks.forEach(currentNavLink=>currentNavLink.classList.remove('active'))
 }
 
-// navLinks.forEach(navLink => {
-//     // console.log(navLink.getAttribute('href'))
-//     let currentElement = document.querySelector(navLink.getAttribute('href'));
-//     new Waypoint({
-//         element: currentElement,
-//         handler:direction=>{
-//             if(direction==="down") {
-//                 // removeAllNavLinkActive()
-//                 navLink.classList.add('active')
-//                 if(navLink.parentElement.previousSibling.firstChild != null){
-//                     navLink.parentElement.previousSibling.firstChild.classList.remove("active");
-//                 }
-//             }else{
-//                 // removeAllNavLinkActive()
-//                 // navLink.classList.add('active')
-//             }
-//         },
-//         offset: "75%"
-//     })
-//     console.log(navLink.parentElement.previousSibling);
-// })
+navLinks.forEach(navLink => {
+    // console.log(navLink.getAttribute('href'))
+    let currentElement = document.querySelector(navLink.getAttribute('href'));
+    new Waypoint({
+        element: currentElement,
+        handler:function (direction){
+            if(direction==="down") {
+                removeAllNavLinkActive()
+                navLink.classList.add('active')
+            }
+            if(direction==="up") {
+                removeAllNavLinkActive()
+                navLink.classList.add('active')
+            }
+        },
+        offset: "75%"
+    })
+})
+
+window.addEventListener("scroll",function (){
+    if (window.scrollY === 0){
+        removeAllNavLinkActive()
+        navLinks[0].classList.add('active')
+    }
+})
 
 // Hero Section type js
 let options = {
@@ -53,8 +57,6 @@ let options = {
 };
 
 var typed = new Typed('.hero-section-text', options);
-
-
 
 // waypoint
 

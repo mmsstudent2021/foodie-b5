@@ -3843,7 +3843,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 20px !important;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #0b8457;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -11128,7 +11128,11 @@ textarea.form-control-lg {
 
 .navbar-brand-img {
   transition: 0.5s;
-  height: 25px;
+  height: 35px;
+}
+
+.nav-link {
+  border-radius: 10px;
 }
 
 .nav-link.active {
