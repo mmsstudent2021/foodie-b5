@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,500&family=Montserrat:wght@300;400;500;600&family=Padauk:wght@400;700&display=swap');
 
 $font-family-sans-serif : 'Montserrat', sans-serif;
+
 $primary : #0b8457;
 //$primary : $green;
 
 //nav scss
 $nav-link-padding-x : 20px !important;
 //$nav-link-font-weight : bold;
-$nav-link-font-size : 16px;
+$nav-link-font-size : 14px;
 $nav-link-hover-color : $primary !important;
-//$navbar-light-active-color : $primary;
+
 
 $btn-font-size : 12px;
 $btn-padding-x : 25px;
@@ -17,12 +18,32 @@ $btn-padding-y : 10px;
 $btn-border-radius : 10px;
 
 $btn-border-radius-sm : 8px;
+$btn-font-size-sm : 9px;
+$btn-padding-y-sm : 10px;
+$btn-padding-x-sm : 10px;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules/animate.css/animate.min.css";
 
+
+@font-face {
+  font-family: "ssmm";
+  src: url("../fonts/ssmm.ttf");
+}
+
+h1{
+
+}
+
+h4{
+
+}
+
+p{
+  font-family: 'Josefin Sans', 'ssmm', sans-serif;
+}
 
 
 .site-navbar{
@@ -78,7 +99,7 @@ $btn-border-radius-sm : 8px;
 
 .menu-card:hover{
   transform: translateY(-10px) !important;
-  box-shadow: $box-shadow-sm;
+  box-shadow: $box-shadow;
 }
 
 .menu-card:hover .dish-img{
