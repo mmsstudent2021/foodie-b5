@@ -23,9 +23,9 @@ $btn-padding-y-sm : 10px;
 $btn-padding-x-sm : 10px;
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-@import "../node_modules/animate.css/animate.min.css";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~animate.css/animate.min.css";
 
 
 @font-face {
@@ -77,6 +77,10 @@ p{
   animation: fadeInDown 1s ease-in-out;
 }
 
+.hero-section-img{
+  cursor: url("../img/spoon.png"),auto;
+}
+
 .min-vh-50{
   min-height: 50vh;
 }
@@ -105,3 +109,22 @@ p{
 .menu-card:hover .dish-img{
   transform: rotate(20deg);
 }
+
+@media screen and (max-width: 576px) {
+
+  h1{
+
+  }
+
+  h4{
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+
+}
+

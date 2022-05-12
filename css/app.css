@@ -11160,6 +11160,10 @@ p {
   animation: fadeInDown 1s ease-in-out;
 }
 
+.hero-section-img {
+  cursor: url("../img/spoon.png"), auto;
+}
+
 .min-vh-50 {
   min-height: 50vh;
 }
@@ -11187,6 +11191,17 @@ p {
 
 .menu-card:hover .dish-img {
   transform: rotate(20deg);
+}
+
+@media screen and (max-width: 576px) {
+  h4, .h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
